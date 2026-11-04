@@ -216,5 +216,15 @@ FROM departments d
 GROUP BY d.dept_name
 HAVING AVG(e.salary) > 50000;
 
-
-
+--1)INNER JOIN returns only matching rows from both tables. 
+--LEFT JOIN returns all rows from the left table and matching rows from the right table.
+--2)CROSS JOIN is used to generate all possible combinations of rows from two tables.
+--3)ON defines the matching condition, while WHERE filters the final result. In OUTER JOIN, WHERE can remove rows with NULL values. In INNER JOIN, they usually produce the same result.
+--4)50 rows (5 × 10 = 50).
+--5)NATURAL JOIN automatically joins tables using columns with the same names and compatible data types.
+--6)NATURAL JOIN can join unexpected columns and produce incorrect results if table structures change.
+SELECT *
+FROM B
+RIGHT JOIN A
+ON A.id = B.id;
+--8)8. FULL OUTER JOIN is used when we need all rows from both tables, including matching and non-matching rows. Missing values are replaced with NULL.
