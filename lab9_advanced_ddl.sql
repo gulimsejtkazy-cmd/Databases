@@ -1,7 +1,3 @@
--- ============================================================
--- Laboratory Work 9: Stored Procedures and User-Defined Functions
--- Part 1: Database Setup  (CityBike rental network)
--- ============================================================
 
 DROP TABLE IF EXISTS rentals, bikes, members, stations CASCADE;
 
